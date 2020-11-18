@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>       
+        
+        
+        <script src="Bai09-ClassProduct.js"></script>
+        <script src="Bai10-listProduct.js"></script>
+        <script src="Bai11-filterProductById.js"></script>
+        <script src="Bai12-filterProductByQuality.js"></script>
+        <script src="Bai13-filterProductBySaleDate.js"></script>
+        <script src="Bai14-totalProduct.js"></script>
+        <script src="Bai15-isHaveProductCategory.js"></script>
+        <script src="Bai16-filterProductBySaleDate.js"></script>
+        
+        <script>
+            var list = listProduct(10);
+            console.log("Bai 11:");
+            console.log(filterProductById(list,2));
+            console.log(filterProductById_ES6(list,1));
+            console.log("Bai 12:");
+            console.log(filterProductByQuality(list));
+            console.log(filterProductByQuality_ES6(list));
+            console.log("Bai 13:");
+            console.log(filterProductBySaleDate(list));
+            console.log(filterProductBySaleDate_ES6(list));
+            console.log("Bai 14:");
+            console.log(totalProduct(list));
+            console.log(totalProduct_forEach(list));
+            console.log("Bai 15:");
+            console.log(isHaveProductCategory(list,2));
+            console.log(isHaveProductCategory_ES6(list,11));
+            console.log("Bai 16:");
+            console.log(filterProductByDate(list));
+            console.log(filterProductByDate_ES6(list));
+        </script>
+    </body>
+</html>
