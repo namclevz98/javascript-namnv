@@ -1,7 +1,7 @@
 function isHaveProductCategory (listProduct, categoryId) {
     try {
         var isHave = 0;
-        listProduct.filter(function(item) {
+        listProduct.forEach(function(item) {
             if(item.categoryId == categoryId)
                 isHave ++;
         })

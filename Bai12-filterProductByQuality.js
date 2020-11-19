@@ -1,8 +1,10 @@
 function filterProductByQuality(listProduct) {
     try {
-        var products = listProduct.filter(function(item) {
-            return item.quality > 0 && item.isDelete == false;
-        });
+        var products = [];
+        listProduct.forEach(function(item) {
+            if(item.quality > 0 && item.isDelete == false)
+                products.push(item);
+        })
         return products;
     } catch (err) {
         alert(err);
@@ -13,11 +15,7 @@ function filterProductByQuality(listProduct) {
 
 const filterProductByQuality_ES6 = (listProduct) => {
     try {
-        var products = [];
-        listProduct.forEach(item => {
-            if(item.quality > 0 && item.isDelete == false);
-                products.push(item);
-        });
+        var products = listProduct.filter(item => item.quality > 0  && item.isDelete == false);
         return products;
     } catch (err) {
         alert(err);

@@ -1,9 +1,11 @@
 function filterProductById(listProduct, productId) {
     try {
-        var product = listProduct.filter(function(item) {
-            return productId = item.id;
-        });
-        return product[0].name;
+        var product = [];
+        listProduct.forEach(function(item){
+            if(productId = item.id)
+                product.push(item);           
+        })
+        return product[0].name;        
     } catch (err) {
         alert(err);
     }
